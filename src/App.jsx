@@ -14,7 +14,7 @@ function App() {
         <Route path='/allebiere' element={<AlleBiere/>} />
         <Route path='/allebiere/:id' element={<ProductDetail/>} />
       </Routes>
-      <Link to='/'><div className="sticky"><button>🍻</button></div></Link>
+      <Link  className="sticky" to='/'>🍻</Link>
 
     </>
   )

@@ -20,13 +20,23 @@ const ProductDetail = () => {
 
     return ( 
         <>
-        <img src={product.image_url} alt="" />
-        <h1>{product.name}</h1>
-        <h2>{product.tagline}</h2>
-        <h5>First Brewed: {product.first_brewed}</h5>
-        <h5>Attenuation Level: {product.attenuation_level}</h5>
-        <p>{product.description}</p>
-        <Link to='/allebiere'><button>🔙</button></Link>
+        <section className="detailPage">
+            <img className="detailImg" src={product.image_url} alt="" />
+            <h1>{product.name}</h1>
+            <h2>{product.tagline}</h2>
+            <article>
+                <div className="space">
+                    <h5>First Brewed: </h5>
+                    <h5>{product.first_brewed}</h5>
+                </div>
+               <div className="space">
+                    <h5>Attenuation Level: </h5>
+                    <h5>{product.attenuation_level}</h5>
+           </div>
+            </article>
+            <p>{product.description}</p>
+            <Link className="btn" to='/allebiere'><button className="btn">🔙</button></Link>
+        </section>
         </>
      );
     }

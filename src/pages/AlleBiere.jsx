@@ -22,7 +22,7 @@ const AlleBiere = () => {
         <>
         {products.map((el, index) => {
             return(
-                <div key={index}>
+                <div key={index} className="flex">
                     <ProductCard
                     el={el}
                     />
