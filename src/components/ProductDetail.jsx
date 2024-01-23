@@ -34,9 +34,11 @@ const ProductDetail = () => {
                     <h5>{product.attenuation_level}</h5>
            </div>
             </article>
-            <p>{product.description}</p>
+            <p className="mgbot">{product.description}</p>
             <Link className="btn" to='/allebiere'><button className="btn">🔙</button></Link>
         </section>
+        <Link  className="sticky" to='/'>🍻</Link>
+
         </>
      );
     }
